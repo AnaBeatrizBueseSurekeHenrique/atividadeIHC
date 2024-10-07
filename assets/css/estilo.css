@@ -374,6 +374,10 @@ hr{
     margin-left: 10px;
       
 } 
+.info{
+    margin-left: 135px;
+    text-align: left;
+}
 .input-login {
     border: 1px solid #9371c4;
     width: 60%;

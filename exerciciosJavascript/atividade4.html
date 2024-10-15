@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <form id="formulario">
+        <p>Insira a letra: </p>
+        <label for="letra">Letra</label>
+        <input type="text" id="letra" name = "letra">
+        <button onclick="myFunction()">Verificar</button>
+        
+    </form>
+    <script>
+        function myFunction() {
+            const x = document.getElementById("letra").value;
+            
+            switch(x){
+                case "a":
+                    alert("A");
+                    break;
+                case "b":
+                    alert("B");
+                    break;
+                default:
+                    alert("Outra Letra");
+                    break;
+            }
+    }
+    </script>
+</body>
+</html>

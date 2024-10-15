@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <form id="formulario">
+        <p>Aperte para começar a calcular!</p>
+        <button onclick="myFunction()">Calcular</button>
+        
+    </form>
+    <script>
+        function myFunction() {
+            const numeros = [];
+            let i = 0;
+            let x = prompt("Insira um valor, ");
+            let soma = 0;
+            while(Boolean(x !== null)){
+                numeros[i] = parseInt(x);
+                soma = soma + numeros[i];
+                i++;
+                x = prompt("Insira um valor, ");
+            }
+            alert(soma);
+    }
+    </script>
+</body>
+</html>

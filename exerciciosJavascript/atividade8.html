@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <form id="formulario">
+        <p>Insira a opção: </p>
+        <p>1. Opção 1, 2. Opção 2, 3. Opção 3</p>
+        <label for="valor">Opção</label>
+        <input type="number" id="valor" name = "valor">
+        <button onclick="myFunction()">Verificar</button>
+        
+    </form>
+    <script>
+        function myFunction() {
+            const x = document.getElementById("valor").value;
+            
+            switch(x){
+                case '1':
+                    alert("Opção 1 escolhida");
+                    break;
+                case '2':
+                    alert("Opção 2 escolhida");
+                    break;
+                case '3':
+                    alert("Opção 3 escolhida");
+                    break;
+                default:
+                    alert("Opção invalida");
+                    break;
+            }
+    }
+    </script>
+</body>
+</html>

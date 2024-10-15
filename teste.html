@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <form id="formulario">
+        <p>Insira dois números para verificar qual é o maior</p>
+        <label for="numero1">Numero 1</label>
+        <input type="number" id="numero1" name = "numero1">
+        <label for="numero2">Numero 2</label>
+        <input type="number" id="numero2" name="numero2"></input>
+        <button type="submit">Verificar</button>
+    </form>
+    <script>
+        const form = document.getElementById('formulario');
+        form.addEventListener('submit', function(){
+            let a = document.getElementById("numero1").value;
+            let b = document.getElementById("numero2").value;
+            if (parseFloat(a) > parseFloat(b)) {
+                let x = a;
+                alert(x);
+            } else{
+                let x = b;
+                 alert(x);
+            }
+           
+        });
+        </script>
+</body>
+</html>
